@@ -8,7 +8,7 @@ def home():
    return render_template('index.html')
 
 @app.route('/', methods=['POST'])
-def game_report():
+def query_button():
    question = request.form['question']
    if question == "Who is the best AE ever?":
       result = "<h1>Erkan!\n:)))))</h1>"
