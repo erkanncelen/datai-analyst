@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Web App</title>
+        <link rel="stylesheet" type="text/css" href="../static/styles/styles.css">
+        <script>
+            function autoGrowTextArea(element) {
+                element.style.height = "5px";
+                element.style.height = (element.scrollHeight)+"px";
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+            <a href="https://xebia.com/digital-transformation/data-and-ai/" target="_blank"><img src="../static/images/xebia.png" alt="Super Smart Data Analyst" width="200" style="position: absolute; top: 30px; left: 30px;"></a>
+        </div>
+        <div>
+            <img src="../static/images/analyst.png" alt="Super Smart Data Analyst" width="200">
+        </div>
+        <div><h1>DATAI ANALYST</h1></div>
+        <!-- <div><h4>Query your data in natural language.</h4></div> -->
+        <div class="input-box">
+            <form method="POST">
+              <div class="question-box">
+                <input class="question" type="text" name="question" value="{{question | safe}}">
+              </div>
+              <div class="submit-box">
+                <input class="submit_button" name="text" type="submit" value="Query Database" id="SI" onclick="loading()">
+            </div>
+            </form>
+            <!-- <hr style="width:350px; border-style: inset; border-width: 1px; border-color: rgba(128, 128, 128, 0.122);"> -->
+          </div>
+        <!-- <div>
+            <textarea id="inputArea" rows="1" cols="50" oninput="autoGrowTextArea(this)"></textarea>
+        </div> -->
+        
+        <div class="result-box">
+            {{result | safe}}
+        </div>
+    </body>
+</html>

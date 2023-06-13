@@ -1,0 +1,125 @@
+body {
+    font-family: Helvetica, sans-serif;
+    margin-top: 150px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: auto;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    color: #333;
+}
+
+h4 {
+    color: rgb(164, 164, 164);
+}
+
+hr {
+    margin-bottom: 0px;
+}
+
+input {
+    outline:none;
+   }
+
+.header-box {
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    margin-right: 80px;
+    margin-left: 80px;
+}
+
+.input-box {
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    margin-right: 80px;
+    margin-left: 80px;
+}
+
+.question-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.question-box input {
+    padding: 12px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* margin: 8px 0; */
+    margin-left: 40px;
+    margin-right: 40px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    font-size: 1em;
+    width: 100%;
+    resize: none;
+    align-self: center;
+  }
+
+.submit-box {
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit_button {
+    color: white;
+    background-color: #710071;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.submit_button:hover {
+    background-color: #850085;
+    transition: background-color 0.2s ease-in-out;
+    box-shadow: 0 0 10px #a800a8;
+    transition: box-shadow 0.2s ease-in-out;
+    transform: scale(1.025);
+    transition: transform 0.1s ease-in-out;
+}
+
+.submit_button:active {
+    background-color: #850085;
+    transition: background-color 0.2s ease-in-out;
+    box-shadow: 0 0 10px #a800a8;
+    transition: box-shadow 0.2s ease-in-out;
+    transform: scale(0.95);
+    transition: transform 0.1s ease-in-out;
+}
+
+.result-box {
+    font-family: Helvetica, sans-serif;
+    font-size: xx-small;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+table {
+    border-collapse:collapse;
+}
